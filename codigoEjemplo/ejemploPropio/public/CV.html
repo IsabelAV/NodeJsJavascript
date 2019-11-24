@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<title>Curriculum Vitae</title>
+		<link href="general.css" rel="stylesheet" type="text/css">
+		<link href="CV.css" rel="stylesheet" type="text/css">
+	</head>
+	<body>
+		<main>
+			<section class="principal">
+				<div class="contenedor">
+					<form action="/recuperar" method="post">
+						<div class="cards">
+							<div class="card">                         
+								<input type="text"  style='width:100%' id="nombrePersona" name="nombre" placeholder="Nombre Completo" onfocus="this.value=''" />
+								<br/><br/>
+								<label id="datos" for="tipoCV">Tipo de CV</label>
+								<select id="tipo" name="tipo">
+									<option value="publico">Publico</option>
+									<option value="privado">Privado</option>
+									<option value="protegido">Protegido</option>
+								</select>
+								<br/><br/>
+								<fieldset id="datosPersonales">
+								<legend>Datos Personales</legend>
+								<label for="fechaNacimiento">Fecha de Nacimiento</label><br/>                          
+								<input type="date" id="fechaNacimiento" name="fechaNacimiento">
+								<br/><br/>
+								<label for="nacionalidad">Nacionalidad</label><br/>
+								<input type="text" style='width:100%' maxlength="9" id="nacionalidad" name="nacionalidad" />
+								<br/>
+								<label for="domicilio">Domicilio</label><br/>
+								<input type="text" style='width:100%' maxlength="9" id="domicilio" name="domicilio" />
+								</fieldset>
+								<fieldset id="contacto">
+								<legend>Contacto</legend>
+								<input type="text" style='width:80%'  maxlength="9" id="telefono" name="telefono" placeholder="Introduzca su Telefono" onfocus="this.value=''" />
+								<br/>
+								<input type="text" style='width:80%' id="correo" name="correo" placeholder="Introduzca su Correo" onfocus="this.value=''" />
+								</fieldset>
+
+								<fieldset id="intereses">
+								    <legend>Intereses y Líneas de trabajo</legend><br/>
+								    <textarea name="intereses" id="LineaTrabajo" rows="10" cols="40"></textarea>
+								</fieldset>
+								<input type="submit" class="boton"><br>  
+							</div>
+						</div>
+					</form>            
+				</div>
+			</section>
+		</main>
+	</body>
+</html>
